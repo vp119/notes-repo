@@ -1,3 +1,8 @@
+---
+layout: default
+title: Photolithography
+---
+
 # Topic E: Photolithography
 **Course**: Microsystems Technologies and Processes (University of Freiburg)  
 **Sources**: *Lecture Slides: Photolithography part 1 & part 2*; *Derivation of the spin-coating equation*; *Derivation of the diffraction equation*; *Rapp (2017)*

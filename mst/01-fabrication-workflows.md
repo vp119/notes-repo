@@ -1,3 +1,8 @@
+---
+layout: default
+title: Process Classification & Fabrication Workflows
+---
+
 # Topic A: Process Classification & Fabrication Workflows
 **Course**: Microsystems Technologies and Processes (University of Freiburg)  
 **Sources**: *Lecture Slides: Introduction, Lithography, Etching, Oxidation*; *Rapp (2017)*; *Shaw et al. (1994)*; *Zhang & MacDonald (1992)*; *Bosch Patent WO1994014187A1*

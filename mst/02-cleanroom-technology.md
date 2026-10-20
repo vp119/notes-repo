@@ -1,3 +1,8 @@
+---
+layout: default
+title: Cleanroom Technology
+---
+
 # Topic B: Cleanroom Technology
 **Course**: Microsystems Technologies and Processes (University of Freiburg)  
 **Sources**: *Lecture Slides: MST Technologies and Processes, Cleanroom Technology.pdf*; *Rapp (2017)*

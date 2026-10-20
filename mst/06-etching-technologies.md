@@ -1,3 +1,8 @@
+---
+layout: default
+title: Etching Technologies
+---
+
 # Topic F: Etching Technologies
 **Course**: Microsystems Technologies and Processes (University of Freiburg)  
 **Sources**: *Lecture Slides: Etching.pdf*; *Rapp (2017)*; *WO1994014187A1 Bosch Patent*; *Tachi et al. (1987)*; *Shaw et al. (1994)*; *Zhang & McDonald (1992)*

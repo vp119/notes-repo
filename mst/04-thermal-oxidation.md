@@ -1,3 +1,8 @@
+---
+layout: default
+title: Thermal Oxidation of Silicon (Deal-Grove Model)
+---
+
 # Topic D: Thermal Oxidation of Silicon (Deal-Grove Model)
 **Course**: Microsystems Technologies and Processes (University of Freiburg)  
 **Sources**: *Lecture Slides: Oxidation of Silicon.pdf*; *Deal & Grove (1965)*; *Rapp (2017)*
