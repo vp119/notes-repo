@@ -24,11 +24,11 @@ title: Process Classification & Fabrication Workflows
 
 2. **Categorization Table**:
 
-| Process | Process Category | Physical/Chemical Explanation | Source Citation |
-| :--- | :--- | :--- | :--- |
-| **Metallization** | **Additive** | Deposition of a new metallic thin film (e.g., Al, Au, Pt) onto the substrate via PVD (sputtering/evaporation) or electroplating. | *Lecture Slides: Introduction* |
-| **Development during lithography** | **Subtractive** | Selective chemical dissolution and removal of exposed (positive resist) or unexposed (negative resist) material from the wafer surface. | *Lecture Slides: Introduction & Lithography* |
-| **Thermal oxidation** | **Transformative** | High-temperature chemical conversion of elemental Silicon ($\text{Si}$) into Silicon Dioxide ($\text{SiO}_2$) via reaction with $\text{O}_2$ or $\text{H}_2\text{O}$ vapor. | *Lecture Slides: Introduction & Oxidation* |
+| Process                            | Process Category   | Physical/Chemical Explanation                                                                                                                                               | Source Citation                              |
+|:-----------------------------------|:-------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------|
+| **Metallization**                  | **Additive**       | Deposition of a new metallic thin film (e.g., Al, Au, Pt) onto the substrate via PVD (sputtering/evaporation) or electroplating.                                            | *Lecture Slides: Introduction*               |
+| **Development during lithography** | **Subtractive**    | Selective chemical dissolution and removal of exposed (positive resist) or unexposed (negative resist) material from the wafer surface.                                     | *Lecture Slides: Introduction & Lithography* |
+| **Thermal oxidation**              | **Transformative** | High-temperature chemical conversion of elemental Silicon ($\text{Si}$) into Silicon Dioxide ($\text{SiO}_2$) via reaction with $\text{O}_2$ or $\text{H}_2\text{O}$ vapor. | *Lecture Slides: Introduction & Oxidation*   |
 
 ---
 
@@ -43,23 +43,6 @@ title: Process Classification & Fabrication Workflows
 * **Explanation**: Anisotropic wet chemical etching (using $\text{KOH}$ or $\text{TMAH}$) etches {100} silicon crystal planes rapidly while stopping at {111} planes. This anisotropic etch ratio produces a V-shaped channel bounded by precise $54.74^\circ$ sidewalls.
 
 #### Step-by-Step Process Sequence:
-
-```
-Step 1: Thermal Oxidation        Step 2: Lift-Off Photolithography
-  +-----------------------+        +---+  [Resist]  +---+
-  |======== SiO2 ========|        |===|             |===|
-  +-----------------------+        +-----------------------+
-  |     (100) Silicon     |        |     (100) Silicon     |
-  +-----------------------+        +-----------------------+
-
-Step 3: Metal Deposition & Lift-Off    Step 4: Channel Oxide Masking & Anisotropic KOH Release
-      [Metal Bridge]                       [Suspended Metal Bridge]
-  +-------+  +-------+                  +-------+  \_____/  +-------+
-  |=======|  |=======|                  |=======|   \   /   |=======|
-  +-------------------+                  +---------\     /----------+
-  |   (100) Silicon   |                  |   (100)  \___/   Silicon |
-  +-------------------+                  +--------------------------+
-```
 
 1. **Substrate Preparation & Mask Oxide Growth**:
    * Clean a single-crystal (100) Silicon wafer.
@@ -89,22 +72,7 @@ Step 3: Metal Deposition & Lift-Off    Step 4: Channel Oxide Masking & Anisotrop
 
 #### Step-by-Step Process Sequence:
 
-```
-Step 1-3: Mask Oxide & 1st Deep RIE      Step 4-5: Sidewall Oxide & Floor Clear
-      |---|       |---|                       |#||---|     |---||#|
-      |   |       |   |                       |#||   |     |   ||#|
-  +---|   |-------|   |---+               +---|#||   |-----|   ||#|---+
-  |   |   |       |   |   |               |   |#||   |     |   ||#|   |
-  |   |___|       |___|   |               |   |#||___|     |___||#|   |
-
-Step 6-7: 2nd Deep RIE & Isotropic SF6 Release Etch
-      |#||---|     |---||#|
-      |#||   |     |   ||#|
-  +---|#||   |-----|   ||#|---+
-  |   |#||   |     |   ||#|   |
-  |  (   )___(     )___(   )  |  <-- Undercut release cavity
-  +---------------------------+
-```
+![SCREAM process](SCREAM.png)
 
 1. **Mask Oxide Preparation**: Deposit a 1–2 $\mu\text{m}$ thick Silicon Dioxide ($\text{SiO}_2$) mask layer onto a Single-Crystal Silicon (SCS) substrate using PECVD.
 2. **Photolithography & Pattern Transfer**:

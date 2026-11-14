@@ -78,11 +78,11 @@ The five primary environmental parameters controlled in a cleanroom include:
 
 #### Solution:
 
-| Cleanroom Setup Concept | Description | Advantage | Disadvantage | Source Citation |
-| :--- | :--- | :--- | :--- | :--- |
-| **1. Ballroom Concept** | One single, large room with a uniform cleanroom ISO classification throughout. | **High flexibility** in equipment placement, tool layout, and spatial re-arrangement. | **High operating costs**, as the entire large room volume must be maintained at maximum cleanliness. | *Cleanroom Technology.pdf (slide "Cleanroom setup concepts: Ballroom")* |
-| **2. Bay-Chase (Bay-Service Alley) Concept** | Space is divided into ultra-clean working corridors ("bays") and separated service aisles ("chases") housing machinery and utility lines. | **Energy-efficient and modular**; individual bays can be controlled and set to different ISO classes independently. | **Reduced spatial flexibility** for long or wide equipment setups across bays due to fixed partition walls. | *Cleanroom Technology.pdf (slide "Cleanroom setup concepts: Bay-chase")* |
-| **3. Mini-Cleanroom / Local Isolation Concept** | Enclosed tabletop units or micro-environments (e.g., laminar flow boxes / SMIF) operating within a lower-grade background room. | **Significantly lower capital and operational costs**. | **Localized protection only**; lower cleanroom quality outside the enclosed mini-units and restricted sample handling area. | *Cleanroom Technology.pdf (slide "Mini cleanrooms")* |
+| Cleanroom Setup Concept                         | Description                                                                                                                               | Advantage                                                                                                           | Disadvantage                                                                                                                | Source Citation                                                          |
+|:------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------|
+| **1. Ballroom Concept**                         | One single, large room with a uniform cleanroom ISO classification throughout.                                                            | **High flexibility** in equipment placement, tool layout, and spatial re-arrangement.                               | **High operating costs**, as the entire large room volume must be maintained at maximum cleanliness.                        | *Cleanroom Technology.pdf (slide "Cleanroom setup concepts: Ballroom")*  |
+| **2. Bay-Chase (Bay-Service Alley) Concept**    | Space is divided into ultra-clean working corridors ("bays") and separated service aisles ("chases") housing machinery and utility lines. | **Energy-efficient and modular**; individual bays can be controlled and set to different ISO classes independently. | **Reduced spatial flexibility** for long or wide equipment setups across bays due to fixed partition walls.                 | *Cleanroom Technology.pdf (slide "Cleanroom setup concepts: Bay-chase")* |
+| **3. Mini-Cleanroom / Local Isolation Concept** | Enclosed tabletop units or micro-environments (e.g., laminar flow boxes / SMIF) operating within a lower-grade background room.           | **Significantly lower capital and operational costs**.                                                              | **Localized protection only**; lower cleanroom quality outside the enclosed mini-units and restricted sample handling area. | *Cleanroom Technology.pdf (slide "Mini cleanrooms")*                     |
 
 ---
 
@@ -96,8 +96,8 @@ The five primary environmental parameters controlled in a cleanroom include:
 * **Plenum**: Upper ceiling compartment that mixes recycled and fresh air, conditions room temperature and humidity, and distributes air to Filter-Fan Units (FFUs).
 * **Bypacks / Machine Room**: Lower utility level situated directly beneath the elevated cleanroom floor; mirrors the cleanroom layout to house vacuum pumps, gas lines, electrical supplies, and neutralization drains.
 * **Media Supply**: Centralized supply lines feeding ultrapure water (UPW), compressed oil-free air, process gases ($\text{N}_2$, $\text{SF}_6$, $\text{O}_2$), and chemical disposal drains.
-* **Diagram Reference**:
-  > **Source Diagram Location**: *Lecture Slides: MST Technologies and Processes, Cleanroom Technology.pdf*, slide titled **"Setup of a cleanroom"** (illustrating the structural cross-section showing plenum, pressurized ceiling, FFUs, white area, elevated perforated floor, grey area, bypack level, and media lines).
+
+![Clean room setup diagram](Clean_Room_Setup.png)
 
 ---
 
