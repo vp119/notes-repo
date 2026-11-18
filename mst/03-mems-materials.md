@@ -38,24 +38,7 @@ There are **14 distinct 3D Bravais lattices** categorized across 7 crystal syste
 3. **Face-Centered Cubic (fcc)**: Lattice parameters $a = b = c$, $\alpha = \beta = \gamma = 90^\circ$; atoms located at the 8 unit cell corners plus 1 atom at the center of each of the 6 faces.
 4. **Primitive Tetragonal**: Lattice parameters $a = b \neq c$, $\alpha = \beta = \gamma = 90^\circ$; atoms located exclusively at unit cell corners.
 
-```mermaid
-graph TD
-    subgraph Primitive_Cubic
-        SC["a = b = c <br/> α = β = γ = 90° <br/> Corner points only"]
-    end
-    subgraph Body_Centered_Cubic
-        BCC["a = b = c <br/> α = β = γ = 90° <br/> Corners + 1 Center point"]
-    end
-    subgraph Face_Centered_Cubic
-        FCC["a = b = c <br/> α = β = γ = 90° <br/> Corners + 6 Face points"]
-    end
-    subgraph Primitive_Tetragonal
-        PT["a = b ≠ c <br/> α = β = γ = 90° <br/> Corner points only"]
-    end
-```
-
-* **Diagram Reference**:
-  > **Source Location**: *Lecture Notes, MEMS Materials.pdf*, slide titled **"The 14 Bravais lattices"** (showing the 3D unit cell drawings for cubic, tetragonal, orthorhombic, monoclinic, triclinic, hexagonal, and rhombohedral lattices).
+![The 14 Bravais lattices](14_bravais_lattice.png)
 
 ---
 
@@ -101,9 +84,8 @@ On standard silicon wafers ($\\le 150\text{ mm}$ diameter), crystal orientation 
 4. **n-type (111)**: Primary flat present; secondary flat located at **$180^\circ$** (directly opposite) the primary flat.
 
 *Note*: Wafers $> 150\text{ mm}$ use laser-engraved notches instead of flats for automated alignment.
-* **Diagram Reference**:
-  > **Source Location**: *Lecture Notes, MEMS Materials.pdf*, slide titled **"Reading wafer orientation"** (illustrating the four SEMI flat configuration diagrams).
 
+![Reading wafer flats](reading_wafer_flats.png)
 ---
 
 ## Part 4: Crystal Defects Classification (0D to 3D)
@@ -160,17 +142,20 @@ graph TD
 
 2. **CZ vs. FZ Comparison Table**:
 
-| Property | Czochralski (CZ) Process | Float-Zone (FZ) Process | Source Citation |
-| :--- | :--- | :--- | :--- |
-| **Melting Setup** | Entire silicon volume is molten inside a quartz crucible | Small localized zone is molten via RF induction coil ($446\text{ MHz}$) without crucible contact | *MEMS Materials.pdf* |
-| **Max Wafer Diameter** | Large ($> 30\text{ cm} / 12''$) | Limited ($\\le 15\text{ cm} / 6''$) due to surface tension limits of the molten zone | *MEMS Materials.pdf* |
-| **Oxygen Contamination** | **High** (oxygen dissolves into melt from quartz $\text{SiO}_2$ crucible) | **Extremely Low** / below detection limit (crucible-free) | *MEMS Materials.pdf* |
-| **Purity & Resistivity** | Lower purity; resistivity $\\sim 50\,\Omega\cdot\text{cm}$ | Ultra-high purity ($1\text{ ppb}$); resistivity $> 200\,\text{k}\Omega\cdot\text{cm}$ | *MEMS Materials.pdf* |
-| **Process Cost** | Low | High | *MEMS Materials.pdf* |
-| **Dopant Distribution** | Irregular axial distribution | Very regular/uniform distribution | *MEMS Materials.pdf* |
+| Property                 | Czochralski (CZ) Process                                                  | Float-Zone (FZ) Process                                                                          | Source Citation      |
+|:-------------------------|:--------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------|:---------------------|
+| **Melting Setup**        | Entire silicon volume is molten inside a quartz crucible                  | Small localized zone is molten via RF induction coil ($446\text{ MHz}$) without crucible contact | *MEMS Materials.pdf* |
+| **Max Wafer Diameter**   | Large ($> 30\text{ cm} / 12''$)                                           | Limited ($\\le 15\text{ cm} / 6''$) due to surface tension limits of the molten zone             | *MEMS Materials.pdf* |
+| **Oxygen Contamination** | **High** (oxygen dissolves into melt from quartz $\text{SiO}_2$ crucible) | **Extremely Low** / below detection limit (crucible-free)                                        | *MEMS Materials.pdf* |
+| **Purity & Resistivity** | Lower purity; resistivity $\\sim 50\,\Omega\cdot\text{cm}$                | Ultra-high purity ($1\text{ ppb}$); resistivity $> 200\,\text{k}\Omega\cdot\text{cm}$            | *MEMS Materials.pdf* |
+| **Process Cost**         | Low                                                                       | High                                                                                             | *MEMS Materials.pdf* |
+| **Dopant Distribution**  | Irregular axial distribution                                              | Very regular/uniform distribution                                                                | *MEMS Materials.pdf* |
 
-* **Diagram Reference**:
-  > **Source Location**: *Lecture Notes, MEMS Materials.pdf*, slides titled **"Czochralski Process: General setup"** and **"Float-Zone Process: Singlecrystalline Silicon"** (showing the crucible setup vs. RF heating coil setup).
+CZ process General Setup:
+![CZ General Setup](CZ_General_Setup.png)
+
+FZ Process:
+![Flat Zone Process](FZ_Process.png)
 
 ---
 
@@ -182,20 +167,7 @@ graph TD
 
 #### Solution:
 
-```mermaid
-graph TD
-    subgraph SIMOX_Process
-        S1["Bulk Silicon Wafer"] --> S2["High-Energy Oxygen Ion Implantation"]
-        S2 --> S3["High-Temperature Annealing (>1300 °C)"]
-        S3 --> S4["Buried SiO2 (BOX) Layer Formed"]
-    end
-    subgraph Smart_Cut_Process
-        P1["Wafer A: Thermal Surface Oxidation (SiO2)"] --> P2["High-Dose Hydrogen (H+) Implantation"]
-        P2 --> P3["Bond Wafer A to Handle Wafer B"]
-        P3 --> P4["Thermal Annealing: Hydrogen Bubbles Cleave Wafer A"]
-        P4 --> P5["Polishing yields Thin Silicon Device Layer on BOX"]
-    end
-```
+![Simox vs Smart cut](SIMOX_Process.png)
 
 1. **SIMOX Process (Separation by IMplantation of OXygen)**:
    * **Step 1**: High-energy, high-dose oxygen ions ($\text{O}^+$) are implanted deep into a bulk single-crystal silicon wafer to create a buried oxygen-rich concentration layer.
@@ -208,5 +180,4 @@ graph TD
    * **Step 4**: Thermal treatment causes hydrogen micro-bubbles to expand, mechanically cleaving Wafer A along the implantation plane.
    * **Step 5**: Surface polishing yields a smooth, ultra-thin single-crystal silicon device layer sitting on top of the buried oxide on Wafer B.
 
-* **Diagram Reference**:
-  > **Source Location**: *Lecture Notes, MEMS Materials.pdf*, slide titled **"Common wafer variants: SOI – the SIMOX Process"** (illustrating side-by-side schematics of SIMOX vs Smart Cut workflows).
+

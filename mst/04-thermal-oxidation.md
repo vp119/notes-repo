@@ -37,21 +37,7 @@ title: Thermal Oxidation of Silicon (Deal-Grove Model)
 
 #### Solution & System Setup:
 
-```mermaid
-graph TD
-    subgraph Pyrogenic_Wet_Oxidation_Setup
-        H2["H2 Gas Feed"] --> Torch["Pyrogenic Torch / Combustion Zone"]
-        O2["O2 Gas Feed"] --> Torch
-        Torch --> Furnace1["Quartz Furnace Tube (>1000 °C)"]
-        Furnace1 --> Wafers1["Silicon Wafers on Quartz Boat"]
-        Furnace1 --> Exhaust1["Vent / Exhaust System"]
-    end
-    subgraph Dry_Oxidation_Setup
-        DryO2["Purified Dry O2 Gas"] --> Furnace2["Quartz Furnace Tube (900-1200 °C)"]
-        Furnace2 --> Wafers2["Silicon Wafers on Quartz Boat"]
-        Furnace2 --> Exhaust2["Exhaust"]
-    end
-```
+![Dry vs Wet Oxidation](Dry_v_Wet_Oxidation.png)
 
 1. **Dry Oxidation System Components**:
    * **Gas Inlet**: Ultra-pure carrier gas ($D\text{ry }\text{O}_2$) passing through moisture filters.
@@ -62,8 +48,6 @@ graph TD
    * **Dual Gas Feeds**: High-purity Hydrogen ($\text{H}_2$) and Oxygen ($\text{O}_2$) regulated mass flow controllers.
    * **Burner / Pyrogenic Torch**: External quartz combustion chamber where $\text{H}_2$ burns in excess $\text{O}_2$ to generate ultra-pure steam ($2\text{H}_2 + \text{O}_2 \rightarrow 2\text{H}_2\text{O}$) without metal ion contamination.
    * **Furnace Tube**: Directs steam across wafers inside the quartz tube furnace.
-* **Diagram Reference**:
-  > **Source Location**: *Lecture Slides: MST Technologies and Processes, Oxidation of Silicon.pdf*, slides titled **"Dry oxidation"** and **"Pyrogenic wet oxidation"**.
 
 ---
 
@@ -128,12 +112,12 @@ graph TD
 
 #### Solution:
 
-| Parameter | Stage 1: Short Time / Thin Oxide ($t \ll t_c$) | Stage 2: Long Time / Thick Oxide ($t \gg t_c$) | Source Citation |
-| :--- | :--- | :--- | :--- |
-| **Phase Name** | **Linear Growth Regime** (Reaction-limited) | **Parabolic Growth Regime** (Diffusion-limited) | *Oxidation of Silicon.pdf* |
-| **Limiting Quantity** | **Chemical reaction rate at interface ($k$)** | **Diffusivity of oxidant through oxide ($D$)** | *Oxidation of Silicon.pdf* |
-| **Thickness Correlation $x(t)$** | Linear dependence: $x(t) \approx \frac{B}{A} t$ | Parabolic dependence: $x(t) \approx \sqrt{Bt}$ | *Oxidation of Silicon.pdf* |
-| **Characteristic Time $t_c$** | Defined at transition boundary: $t_c = \frac{A^2}{4B}$ | Defined at transition boundary: $t_c = \frac{A^2}{4B}$ | *Oxidation of Silicon.pdf* |
+| Parameter                        | Stage 1: Short Time / Thin Oxide ($t \ll t_c$)         | Stage 2: Long Time / Thick Oxide ($t \gg t_c$)         | Source Citation            |
+|:---------------------------------|:-------------------------------------------------------|:-------------------------------------------------------|:---------------------------|
+| **Phase Name**                   | **Linear Growth Regime** (Reaction-limited)            | **Parabolic Growth Regime** (Diffusion-limited)        | *Oxidation of Silicon.pdf* |
+| **Limiting Quantity**            | **Chemical reaction rate at interface ($k$)**          | **Diffusivity of oxidant through oxide ($D$)**         | *Oxidation of Silicon.pdf* |
+| **Thickness Correlation $x(t)$** | Linear dependence: $x(t) \approx \frac{B}{A} t$        | Parabolic dependence: $x(t) \approx \sqrt{Bt}$         | *Oxidation of Silicon.pdf* |
+| **Characteristic Time $t_c$**    | Defined at transition boundary: $t_c = \frac{A^2}{4B}$ | Defined at transition boundary: $t_c = \frac{A^2}{4B}$ | *Oxidation of Silicon.pdf* |
 
 * **Derivation of Linear Limit ($t \ll t_c$)**:
   Using binomial expansion $\sqrt{1+y} \approx 1 + \frac{y}{2}$ for $y = \frac{4Bt}{A^2} = \frac{t}{t_c} \ll 1$:

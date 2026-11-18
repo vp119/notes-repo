@@ -123,16 +123,7 @@ An FFU consists of three functional components:
 
 #### Solution:
 
-```
-Streamlines around a Filter Fiber:
-     Straining       Impingement       Interception        Diffusion
-   (Particle > Gap)  (Inertial Impact) (Attracts Fiber) (Brownian Motion)
-     o---|  |--o       o-----\           o--------\          o  s  s
-         |  |                 X (Hit)              o (Touch)   \  / \ X (Hit)
-     +----------+     +----------+      +----------+       +----------+
-     |  Fiber   |     |  Fiber   |      |  Fiber   |       |  Fiber   |
-     +----------+     +----------+      +----------+       +----------+
-```
+![Four Filtering Techniques](Four_Filtering_Techniques.png)
 
 1. **Straining (Sieving)**:
    * **Mechanism**: Mechanical trapping that occurs when a particle's physical diameter is **larger than the open pore gap** between two adjacent filter fibers.
@@ -146,8 +137,6 @@ Streamlines around a Filter Fiber:
 4. **Diffusion (Brownian Motion)**:
    * **Mechanism**: Very small particles undergo erratic Brownian motion caused by collisions with surrounding gas molecules. This random movement causes particles to cross streamlines and bump into filter fibers.
    * **Target Particle Size**: Smallest particle fraction (down to $\\sim 0.01\,\mu\text{m} / 10\text{ nm}$).
-* **Diagram Reference**:
-  > **Source Diagram Location**: *Lecture Slides: MST Technologies and Processes, Cleanroom Technology.pdf*, slide titled **"Four filtering effects"**.
 
 ---
 

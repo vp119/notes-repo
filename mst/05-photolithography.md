@@ -93,11 +93,11 @@ graph TD
     end
 ```
 
-| Lithography Setup | Physical Configuration | Minimum Feature Resolution Equation | Source Citation |
-| :--- | :--- | :--- | :--- |
-| **Contact Lithography** | Photomask is clamped in direct physical contact with the photoresist surface. | $$W_{\text{min}} \approx \sqrt{\lambda \cdot d_{\text{resist}}}$$ | *Lecture Slides: Photolithography part 1* |
-| **Proximity Lithography** | Photomask is separated from photoresist by a small physical air gap $g$ ($\\sim 10\text{--}50\,\mu\text{m}$). | $$W_{\text{min}} \approx \sqrt{\lambda \cdot g}$$ | *Lecture Slides: Photolithography part 1* |
-| **Projection Lithography** | Projection reduction lens system projects demagnified image of the mask onto resist. | Rayleigh Criterion: $$R = k_1 \frac{\lambda}{\text{NA}} = k_1 \frac{\lambda}{n \sin \alpha}$$ | *Lecture Slides: Photolithography part 1 & part 2* |
+| Lithography Setup          | Physical Configuration                                                                                        | Minimum Feature Resolution Equation                                                           | Source Citation                                    |
+|:---------------------------|:--------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|:---------------------------------------------------|
+| **Contact Lithography**    | Photomask is clamped in direct physical contact with the photoresist surface.                                 | $$W_{\text{min}} \approx \sqrt{\lambda \cdot d_{\text{resist}}}$$                             | *Lecture Slides: Photolithography part 1*          |
+| **Proximity Lithography**  | Photomask is separated from photoresist by a small physical air gap $g$ ($\\sim 10\text{--}50\,\mu\text{m}$). | $$W_{\text{min}} \approx \sqrt{\lambda \cdot g}$$                                             | *Lecture Slides: Photolithography part 1*          |
+| **Projection Lithography** | Projection reduction lens system projects demagnified image of the mask onto resist.                          | Rayleigh Criterion: $$R = k_1 \frac{\lambda}{\text{NA}} = k_1 \frac{\lambda}{n \sin \alpha}$$ | *Lecture Slides: Photolithography part 1 & part 2* |
 
 * **Diagram References**:
   > **Source Location**: *Lecture Slides: MST Technologies and Processes, Photolithography, part 1.pdf*, slides titled **"Contact lithography"**, **"Proximity lithography"**, and **"Projection lithography"**.
@@ -147,15 +147,7 @@ graph TD
 
 #### Solution:
 
-```
-Positive Resist Contrast Curve:            Negative Resist Contrast Curve:
-Normalized Thickness                       Normalized Thickness
-   1 |--------\                               1 |             /-------
-     |         \                                |            /
-     |          \                               |           /
-   0 +-----------+-----> Log(Dose)            0 +----------+---------> Log(Dose)
-                D0   D100                                 D0   D100
-```
+![Photoresist Contrast Curve](photoresist_contrast_curve.png)
 
 1. **Parameter Definitions**:
    * **$D_0$ (Incipient Dose)**: Minimum exposure dose required to begin altering resist solubility.
@@ -179,20 +171,7 @@ Normalized Thickness                       Normalized Thickness
 
 2. **Complete Photolithography Workflow Sequence**:
 
-```mermaid
-graph TD
-    A["1. Substrate Cleaning & Dehydration Bake"] --> B["2. Adhesion Promoter Application (HMDS)"]
-    B --> C["3. Photoresist Spin Coating"]
-    C --> D["4. Edge Bead Removal (EBR)"]
-    D --> E["5. Softbake / Pre-Exposure Bake"]
-    E --> F["6. Mask Alignment & UV Exposure"]
-    F --> G["7. Post-Exposure Bake (PEB)"]
-    G --> H["8. Development, Rinsing & Drying"]
-    H --> I["9. Hardbake (Final Cure)"]
-```
-
-* **Diagram References**:
-  > **Source Location**: *Lecture Slides: MST Technologies and Processes, Photolithography, part 2.pdf*, slide titled **"The basic lithography workflow"**.
+![Photolithiography Workflow](Photolithiography_workflow.png)
 
 ---
 

@@ -39,6 +39,8 @@ title: Etching Technologies
 
 #### Solution:
 
+![Additive vs Subtractive Etching](lift_off_v_additive_etching.png)
+
 ```mermaid
 graph TD
     subgraph Workflow_1_Subtractive_Metal_Etch
@@ -96,15 +98,7 @@ $$3\text{Si} + 4\text{HNO}_3 + 18\text{HF} \rightarrow 3\text{H}_2\text{SiF}_6 +
 
 #### Solution:
 
-```
-                  HF (49.23%)
-                     / \
-                    /   \
-                   /  *  \  <- Iso-etch rate contour line
-                  /       \
-                 /_________\
-  Diluent (AcOH)             HNO3 (69.51%)
-```
+![Ternary phase diagram](ternary_phase_diagram.png)
 
 1. **Reading Compositions for $13\ \mu\text{m/min}$ Etch Rate** (from *Exam SS 2020 Q5.3* & *Lecture Slides: Etching.pdf* slide "Example: designing an etching solution"):
    By locating the $13\ \mu\text{m/min}$ solid iso-etch rate contour line on the ternary phase diagram, three valid mixture compositions (in weight percentages of commercial reagents) are:
@@ -121,8 +115,6 @@ $$3\text{Si} + 4\text{HNO}_3 + 18\text{HF} \rightarrow 3\text{H}_2\text{SiF}_6 +
 3. **Preference Justification**:
    * **Preferred Region**: The **$\text{HNO}_3$-rich / $\text{HF}$-limited region** (lower right side of the ternary plot) is preferred.
    * **Physical Explanation**: In the $\text{HF}$-limited regime, oxidation by excess $\text{HNO}_3$ occurs rapidly, making the dissolution rate of $\text{SiO}_2$ by $\text{HF}$ the rate-limiting step. This diffusion-controlled regime yields smooth, polished, mirror-like silicon surfaces, whereas $\text{HF}$-rich mixtures are reaction-rate limited and result in rough, pitted surface topographies.
-* **Diagram Reference**:
-  > **Source Location**: *Lecture Slides: Etching.pdf*, slide titled **"Example: designing an etching solution"** (showing the ternary phase diagram of $\text{HF}(49.23\%)\text{--}\text{HNO}_3(69.51\%)\text{--}\text{Diluent}$ with iso-etch rate contours).
 
 ---
 
@@ -165,10 +157,11 @@ $$3\text{Si} + 4\text{HNO}_3 + 18\text{HF} \rightarrow 3\text{H}_2\text{SiF}_6 +
 * **Exam Appearances**: *WS 2021/2022 (Q5.3), WS 2023/2024 (Q5.3)*
 
 #### Solution:
+
+![isotropic v/s Anisotropic](isotropic_v_anisotropic.png)
+
 * **Left Image (Smooth Vertical Sidewalls, No Bottom Faceting)**: Etched using **$\text{TMAH}$** ($25\% \text{ TMAH at } 86^\circ\text{C}$). $\text{TMAH}$ exhibits a lower $\{100\}/\{111\}$ selectivity ratio ($\\sim 30:1$), which prevents aggressive corner-undercutting faceting on (110) substrates.
 * **Right Image (Visible $\{111\}$ Planes at Trench Bottom)**: Etched using **$\text{KOH}$** ($40\% \text{ KOH at } 70^\circ\text{C}$). $\text{KOH}$ possesses an extremely high anisotropy ratio ($\\sim 400:1$), causing rapid development of bounding $\{111\}$ planes at trench bases.
-* **Diagram Reference**:
-  > **Source Location**: *Lecture Slides: Etching.pdf*, slide titled **"Isotropic vs. anisotropic"**, Figure 9 ("Actual etch profiles of a deep groove etched on a (110) wafer using TMAH and KOH").
 
 ---
 
@@ -177,13 +170,13 @@ $$3\text{Si} + 4\text{HNO}_3 + 18\text{HF} \rightarrow 3\text{H}_2\text{SiF}_6 +
 
 #### Solution:
 
-| Feature | Potassium Hydroxide ($\text{KOH}$) | Tetramethylammonium Hydroxide ($\text{TMAH}$) | Ethylenediamine Pyrocatechol ($\text{EDP}$) | Source Citation |
-| :--- | :--- | :--- | :--- | :--- |
-| **Anisotropy Ratio $(\{100\}/\{111\})$** | **Highest ($\\sim 400:1$)** | Moderate ($\\sim 30:1$) | High ($\\sim 35:1$) | *Lecture Slides: Etching.pdf* |
-| **Silicon Etch Rate ($\{110\}$)** | $1.4\ \mu\text{m/min}$ | $1.0\ \mu\text{m/min}$ | $1.25\ \mu\text{m/min}$ | *Lecture Slides: Etching.pdf* |
-| **Etch Mask Selectivity** | Excellent for $\text{Si}_3\text{N}_4$; good for $\text{SiO}_2$ ($400:1$) | Excellent for $\text{Si}_3\text{N}_4$; attacks $\text{SiO}_2$ slowly | Outstanding for $\text{Si}_3\text{N}_4$, $\text{SiO}_2$ ($5000:1$), and metals ($\text{Au}, \text{Cr}$) | *Lecture Slides: Etching.pdf* |
-| **Toxicity & Handling** | **Non-toxic**; easy handling | **Toxic**; strong organ base | **Highly toxic & carcinogenic**; ages rapidly in air | *Lecture Slides: Etching.pdf* |
-| **IC / CMOS Compatibility** | **Poor** (alkali $\text{K}^+$ ions cause mobile charge gate contamination; corrodes $\text{Al}$) | **Excellent** (alkali-ion-free metal-ion-free developer) | Good (metal-ion-free, preserves $\text{Al}$ if doped) | *Lecture Slides: Etching.pdf* |
+| Feature                                  | Potassium Hydroxide ($\text{KOH}$)                                                               | Tetramethylammonium Hydroxide ($\text{TMAH}$)                        | Ethylenediamine Pyrocatechol ($\text{EDP}$)                                                             | Source Citation               |
+|:-----------------------------------------|:-------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------|:------------------------------|
+| **Anisotropy Ratio $(\{100\}/\{111\})$** | **Highest ($\\sim 400:1$)**                                                                      | Moderate ($\\sim 30:1$)                                              | High ($\\sim 35:1$)                                                                                     | *Lecture Slides: Etching.pdf* |
+| **Silicon Etch Rate ($\{110\}$)**        | $1.4\ \mu\text{m/min}$                                                                           | $1.0\ \mu\text{m/min}$                                               | $1.25\ \mu\text{m/min}$                                                                                 | *Lecture Slides: Etching.pdf* |
+| **Etch Mask Selectivity**                | Excellent for $\text{Si}_3\text{N}_4$; good for $\text{SiO}_2$ ($400:1$)                         | Excellent for $\text{Si}_3\text{N}_4$; attacks $\text{SiO}_2$ slowly | Outstanding for $\text{Si}_3\text{N}_4$, $\text{SiO}_2$ ($5000:1$), and metals ($\text{Au}, \text{Cr}$) | *Lecture Slides: Etching.pdf* |
+| **Toxicity & Handling**                  | **Non-toxic**; easy handling                                                                     | **Toxic**; strong organ base                                         | **Highly toxic & carcinogenic**; ages rapidly in air                                                    | *Lecture Slides: Etching.pdf* |
+| **IC / CMOS Compatibility**              | **Poor** (alkali $\text{K}^+$ ions cause mobile charge gate contamination; corrodes $\text{Al}$) | **Excellent** (alkali-ion-free metal-ion-free developer)             | Good (metal-ion-free, preserves $\text{Al}$ if doped)                                                   | *Lecture Slides: Etching.pdf* |
 
 ---
 
@@ -195,16 +188,7 @@ $$3\text{Si} + 4\text{HNO}_3 + 18\text{HF} \rightarrow 3\text{H}_2\text{SiF}_6 +
 
 #### Solution:
 
-```
-a) Plasma Etching (PE)         b) Sputter Etching (SE)        c) Reactive Ion Etching (RIE)
-   (Chemical / Isotropic)         (Physical / Anisotropic)       (Hybrid Chemical-Physical)
-      [ Radicals F* ]                [ Ar+ Ions ]                  [ Ar+ Ions & F* Radicals ]
-         |   |   |                      |   |   |                      |   |   |
-      vvvvvvvvvvvvv                  vvvvvvvvvvvvv                  vvvvvvvvvvvvv
-     +---------------+              +---------------+              +---------------+
-     |   Substrate   |              |   Substrate   |              |   Substrate   |
-     +---------------+              +---------------+              +---------------+
-```
+![Plasma, Sputter and Reactive Ion Etching](plasma_sputter_ion_etching.png)
 
 1. **Plasma Etching (PE / Chemical Dry Etching)**:
    * **Mechanism**: Glow discharge plasma dissociates precursor gas molecules (e.g., $\text{CF}_4 / \text{O}_2$ or $\text{SF}_6$) into uncharged, highly reactive free radicals ($\text{F}^*$). Radicals diffuse to the substrate surface, adsorb, and react chemically to form volatile reaction products (e.g., $\text{SiF}_4\uparrow$) that are pumped away.
@@ -221,8 +205,6 @@ a) Plasma Etching (PE)         b) Sputter Etching (SE)        c) Reactive Ion Et
    * **Rate Enhancement**: The combined etch rate of RIE is **an order of magnitude faster** than the sum of pure chemical plasma etching and pure physical sputter etching acting independently.
    * **Anisotropy**: **High** (aspect ratios up to 20--30).
    * **Selectivity**: **Moderate to High**.
-* **Diagram Reference**:
-  > **Source Location**: *Lecture Slides: Etching.pdf*, slide titled **"Dry etching processes: physical + chemical etching"**, Figure ("sputtering, sputter etching, inverse sputter etching, reactive ion etching").
 
 ---
 
@@ -234,14 +216,7 @@ a) Plasma Etching (PE)         b) Sputter Etching (SE)        c) Reactive Ion Et
 
 #### Solution:
 
-```mermaid
-graph TD
-    subgraph Bosch_DRIE_Cyclic_Workflow
-        Step1["1. Passivation Step: C4F8 + Ar Plasma <br/> Deposits thin Teflon-like (CF2)n fluoropolymer coating"] --> Step2["2. Floor Passivation Clearing: SF6 + Ar+ Ion Sputtering <br/> Directional ions clear fluoropolymer from trench floor"]
-        Step2 --> Step3["3. Isotropic Silicon Etch Step: SF6 Plasma <br/> Fluorine radicals chemically etch exposed floor silicon"]
-        Step3 -- "Repeat 100s of Cycles" --> Step1
-    end
-```
+![Bosch Process workflow](bosch_process_workflow.png)
 
 1. **Process Workflow**:
    The Bosch process (invented by A. Urban and F. Lärmer at Robert Bosch GmbH in 1994) achieves deep, vertical silicon structures by rapidly alternating between two distinct operational modes in a time-multiplexed ICP-RIE system:
@@ -260,8 +235,6 @@ graph TD
 2. **Cause of Sidewall Scalloping (Waviness)**:
    * Because the chemical $\text{SF}_6$ etch phase is inherently isotropic, each brief chemical etch step undercuts slightly into the silicon sidewall beneath the cleared passivation line.
    * Repetition of hundreds of alternating passivation/etch cycles leaves a characteristic series of micro-undercut ripples known as **scallops** along the trench sidewalls.
-* **Diagram Reference**:
-  > **Source Location**: *Lecture Slides: Etching.pdf*, slide titled **"Bosch Process: process workflow"** (illustrating the sequence of passivation layer deposition, directional ion clearing, and isotropic radical etching yielding wavy sidewalls).
 
 ---
 
@@ -285,11 +258,11 @@ graph TD
 
 #### Solution:
 
-| Parameter | Bosch DRIE Process | Cryogenic DRIE Process | Source Citation |
-| :--- | :--- | :--- | :--- |
-| **Operating Temperature** | **Room Temperature** ($\\sim 20^\circ\text{C}$) | **Cryogenic Temperatures** ($-110^\circ\text{C}$ to $-100^\circ\text{C}$) | *Lecture Slides: Etching.pdf* |
-| **Process Mode** | Time-multiplexed / Intermittent cycling | Continuous single-step process | *Lecture Slides: Etching.pdf* |
-| **Gas Chemistry** | Alternating $\text{C}_4\text{F}_8$ (passivation) and $\text{SF}_6 / \text{Ar}$ (etching) | Simultaneous $\text{SF}_6 + \text{O}_2$ gas mixture | *Lecture Slides: Etching.pdf* |
-| **Passivation Layer** | Teflon-like fluoropolymer $(\text{CF}_x)_n$ | Silicon oxyfluoride ($\text{SiO}_x\text{F}_y$) | *Lecture Slides: Etching.pdf* |
-| **Sidewall Profile** | **Wavy / Scalloped** sidewall profile | **Smooth**, ripple-free vertical sidewalls | *Lecture Slides: Etching.pdf* |
-| **Mask Compatibility** | Standard photoresists ($\text{SiO}_2$ selectivity $> 100:1$) | Requires highly cold-resilient masks ($\text{Al}_2\text{O}_3$, hard-baked resist) | *Lecture Slides: Etching.pdf* |
+| Parameter                 | Bosch DRIE Process                                                                       | Cryogenic DRIE Process                                                            | Source Citation               |
+|:--------------------------|:-----------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|:------------------------------|
+| **Operating Temperature** | **Room Temperature** ($\\sim 20^\circ\text{C}$)                                          | **Cryogenic Temperatures** ($-110^\circ\text{C}$ to $-100^\circ\text{C}$)         | *Lecture Slides: Etching.pdf* |
+| **Process Mode**          | Time-multiplexed / Intermittent cycling                                                  | Continuous single-step process                                                    | *Lecture Slides: Etching.pdf* |
+| **Gas Chemistry**         | Alternating $\text{C}_4\text{F}_8$ (passivation) and $\text{SF}_6 / \text{Ar}$ (etching) | Simultaneous $\text{SF}_6 + \text{O}_2$ gas mixture                               | *Lecture Slides: Etching.pdf* |
+| **Passivation Layer**     | Teflon-like fluoropolymer $(\text{CF}_x)_n$                                              | Silicon oxyfluoride ($\text{SiO}_x\text{F}_y$)                                    | *Lecture Slides: Etching.pdf* |
+| **Sidewall Profile**      | **Wavy / Scalloped** sidewall profile                                                    | **Smooth**, ripple-free vertical sidewalls                                        | *Lecture Slides: Etching.pdf* |
+| **Mask Compatibility**    | Standard photoresists ($\text{SiO}_2$ selectivity $> 100:1$)                             | Requires highly cold-resilient masks ($\text{Al}_2\text{O}_3$, hard-baked resist) | *Lecture Slides: Etching.pdf* |
